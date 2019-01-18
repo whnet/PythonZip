@@ -22,11 +22,8 @@ def compress(get_files_path, set_files_path,pwd):
         for filename in filenames:
             f.write(os.path.join(dirpath,filename), fpath+filename)
     f.close()
-    if pwd=="ang":
-         print('\n'.join([''.join([('ang'[(x-y) % len('ang')] if ((x*0.05)**2+(y*0.1)**2-1)**3-(x*0.05)**2*(y*0.1)**3 <= 0 else ' ') for x in range(-30, 30)]) for y in range(30, -30, -1)]))
-         print("        forever on-line")
-    else:
-        print("压缩完成")
+
+    print("压缩完成")
 
     input("Prease <enter>")
 
